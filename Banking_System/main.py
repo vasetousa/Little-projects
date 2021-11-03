@@ -29,7 +29,7 @@ if __name__ == "__main__":
             quit(121)
         elif PIN.isdigit():
             PIN = int(PIN)
-            if PIN == 3520:
+            if PIN == 0000:
                 print(b.user_info())
             else:
                 print('Incorrect PIN, please try again.')
