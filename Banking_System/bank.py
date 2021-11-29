@@ -10,7 +10,7 @@ class Bank(User):
         self.user_accounts = defaultdict(lambda: None)
 
     def account_balance(self):
-        return f' - Your current balance is {self.balance}'
+        return f' <<< Your current balance is ${self.balance} >>>'
 
     def withdrawal(self, amount):
         if self.balance < amount:

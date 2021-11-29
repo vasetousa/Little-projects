@@ -30,19 +30,23 @@ if __name__ == "__main__":
         elif PIN.isdigit():
             PIN = int(PIN)
             if PIN == 0000:
-                print(b.user_info())
+                pass
             else:
                 print('Incorrect PIN, please try again.')
+                continue
         else:
             print("The PIN should contain numbers only, please try again.")
+            continue
         break
 while True:
     print(data[1])
     option = input('Please choose an option: ')
+    print()
     result, number = is_valid(option)
     if result == True:
         if number == 1:
             print(b.user_info())
+            print(b.account_balance())
         elif number == 2:
             b.add_account()
         elif number == 3:
